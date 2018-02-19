@@ -10,7 +10,6 @@
 		OUT	DDRD, R16	;DDRD is DigitalPort Pin0-7.
 		OUT	DDRB, R17	;DDRB is DigitalPort Pin8-13.
 		OUT DDRC, R17	;DDRC is AnalogPort A0-A5.
-		RJMP MAIN
 
 		MAIN:
 		IN		R16, PINB
