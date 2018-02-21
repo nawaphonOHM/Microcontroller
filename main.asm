@@ -10,7 +10,7 @@
 		LDI	R17, 0x0	;Loads 00000000 into R17 for prepare DigitalPort Pin8-13 configure and Analog PinA0-A5.
 		OUT	DDRD, R16	;DDRD is DigitalPort Pin0-7.
 		OUT	DDRB, R17	;DDRB is DigitalPort Pin8-13.
-		OUT DDRC, R17	;DDRC is AnalogPort A0-A5.
+		OUT 	DDRC, R17	;DDRC is AnalogPort A0-A5.
 
 		MAIN:
 		IN		R16, PINB
