@@ -1,8 +1,9 @@
+;Nawaphon Isarathanachaikul 02/21/2018
+
 .INCLUDE "m328pdef.inc"
 
 .CSEG
 	.ORG 0x0
-		RJMP SET_PINs
 
 		SET_PINs:
 		LDI	R16, 0xFF	;Loads 11111111 into R16 for prepare DigitalPort Pin0-7 configure.
