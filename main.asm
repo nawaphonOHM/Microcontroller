@@ -6,8 +6,8 @@
 	.ORG 0x0
 
 		SET_PINs:
-		LDI	R16, 0xFF	;Loads 11111111 into R16 for prepare DigitalPort Pin0-7 configure.
-		LDI	R17, 0x0	;Loads 00000000 into R17 for prepare DigitalPort Pin8-13 configure and Analog PinA0-A5.
+		LDI	R16, 0xFF	;Loads 11111111 into R16 for preparing DigitalPort Pin0-7 configure.
+		LDI	R17, 0x0	;Loads 00000000 into R17 for preparing DigitalPort Pin8-13 configure and Analog PinA0-A5.
 		OUT	DDRD, R16	;DDRD is DigitalPort Pin0-7.
 		OUT	DDRB, R17	;DDRB is DigitalPort Pin8-13.
 		OUT 	DDRC, R17	;DDRC is AnalogPort A0-A5.
