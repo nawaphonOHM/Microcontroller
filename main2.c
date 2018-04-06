@@ -24,7 +24,7 @@ int main (void)
 	PORTD = 0b00000111;
 	EICRA = 0b00000010;
 	EIMSK = 0b00000001;
-	sei();
+	sei ();
 	
 	while (1)
 	{
