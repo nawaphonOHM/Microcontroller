@@ -34,9 +34,9 @@ int main (void)
 
 ISR (INT0_vect)
 {
-	_delay_ms(100);
-	detect_keypad();
-	operated_LED();
+	_delay_ms (100);
+	detect_keypad ();
+	operated_LED ();
 	numberic = 0b00001111;
 }
 
@@ -121,7 +121,7 @@ void operated_LED (void)
 		for (loop_control = 5; loop_control > 0; loop_control--)
 		{
 			PORTD = 0b0000110;
-			_delay_ms(200);
+			_delay_ms (200);
 			PORTD = 0b00000111;
 		}
 	}
@@ -130,7 +130,7 @@ void operated_LED (void)
 		for (loop_control = numberic; loop_control > 0; loop_control--)
 		{
 			PORTD = 0b00000101;
-			_delay_ms(200);
+			_delay_ms (200);
 			PORTD = 0b00000111;
 		}
 	}
