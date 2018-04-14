@@ -13,8 +13,8 @@
 void detect_keypad (void);
 void operated_LED (void);
 
-int numberic = 0b00001111;
-int loop_control;
+char numberic = 0b00001111;
+char loop_control;
 
 int main (void)
 {
